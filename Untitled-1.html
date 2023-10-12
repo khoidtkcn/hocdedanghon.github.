@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trang Web Học Tập</title>
+</head>
+<body>
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "145621765298827");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v18.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <header>
+        <h1>Chào mừng đến với Trang Web Học Tập của chúng tôi!</h1>
+    </header>
+
+    <nav>
+        <a href="#baihoc">Bài học</a> |
+        <a href="#baitap">Bài tập</a> |
+        <a href="#lienhe">Liên hệ</a>
+    </nav>
+
+    <section id="baihoc">
+        <h2>Bài học</h2>
+        <p>Đây là nơi chúng tôi cung cấp các bài học.</p>
+    </section>
+
+    <section id="baitap">
+        <h2>Bài tập</h2>
+        <p>Đây là nơi bạn có thể thực hành những gì bạn đã học.</p>
+    </section>
+
+    <section id="lienhe">
+        <h2>Liên hệ</h2>
+        <p>Nếu bạn có bất kỳ câu hỏi nào, đừng ngần ngại liên hệ với chúng tôi.</p>
+    </section>
+
+    <footer>
+        <p>Bản quyền © 2023 Trang Web Học Tập</p>
+    </footer>
+</body>
+</html>
